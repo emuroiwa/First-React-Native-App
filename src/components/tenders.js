@@ -15,7 +15,7 @@ class TendersList extends Component{
           });
     };
     renderTenders(){
-        return this.state.tenders.map(tender => <Text>{tender.title}</Text>);
+        return this.state.tenders.map(tender => <Text key={tender.title}>{tender.title}</Text>);
     };
     render(){
         return(
